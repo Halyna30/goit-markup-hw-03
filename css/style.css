@@ -1,0 +1,227 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* цвет фона #FFFFFF */
+/* вторичный цвет фона #2F303A */
+/* цвет акцента #2196F3 */
+/* белый цвет #FFFFFF */
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-text-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header and Footer*/
+
+.header-contacts a,
+.footer-contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+.header-contacts {
+  letter-spacing: 0.02em;
+}
+
+/* Logo */
+
+.header-logo,
+.footer-logo {
+  color: var(--title-text-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.header-logo > span,
+.footer-logo > span {
+  color: var(--accent-color);
+}
+/* Navigation */
+
+.nav-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+/* Section Hero */
+
+.hero {
+  color: var(--second-text-color);
+  background-color: blue;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Button */
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button:focus {
+}
+
+/* Section our team*/
+
+.title {
+  color: var(--title-text-color);
+}
+
+.item-title {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--second-text-color);
+  text-align: center;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: none;
+}
+/* Section our work */
+
+.about-us-list h3,
+.item-title {
+  text-transform: uppercase;
+}
+
+/* Customers */
+
+.customers-list-link:hover {
+  color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer-contacts address {
+  color: var(--second-text-color);
+  background-color: black;
+  font-style: normal;
+  line-height: 1.71;
+}
+.contacts-text a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+div > b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: black;
+}
+
+.footer-logo {
+  color: var(--second-text-color);
+  background-color: black;
+}
+/* Portfolio Page */
+
+.list-buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio-subtitle {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+
+.portfolio-list a {
+  text-decoration: none;
+}
