@@ -41,13 +41,11 @@
     <main>
       <!--Cекция Герой-->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения <br />
-            для вашего бизнеса
-          </h1>
-          <button class="button">Заказать услугу</button>
-        </div>
+        <h1 class="hero-title">
+          Эффективные решения <br />
+          для вашего бизнеса
+        </h1>
+        <button class="button">Заказать услугу</button>
       </section>
 
       <!--Cекция о нас-->
@@ -55,34 +53,55 @@
         <div class="container">
           <h2 hidden>O нас</h2>
           <ul class="about-us-list">
-            <li>
-              <img src="./images/Vector1.svg" alt="Иконка" width="70" />
+            <li class="item">
+              <img
+                class="icon"
+                src="./images/Vector1.svg"
+                alt="Иконка"
+                width="70"
+                height="70"
+              />
               <h3 class="title">Внимание к деталям</h3>
-              <p class="text">
+              <p class="about-us-text text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <img src="./images/Vector2.svg" alt="Иконка" width="70" />
+            <li class="item">
+              <img
+                src="./images/Vector2.svg"
+                alt="Иконка"
+                width="70"
+                class="icon"
+              />
               <h3 class="title">Пунктуальность</h3>
-              <p class="text">
+              <p class="about-us-text text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <img src="./images/Vector3.svg" alt="Иконка" width="70" />
+            <li class="item">
+              <img
+                src="./images/Vector3.svg"
+                alt="Иконка"
+                width="70"
+                class="icon"
+              />
               <h3 class="title">Планирование</h3>
-              <p class="text">
+              <p class="about-us-text text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <img src="./images/Vector4.svg" alt="Иконка" width="70" />
+            <li class="item">
+              <img
+                src="./images/Vector4.svg"
+                alt="Иконка"
+                width="70"
+                class="icon"
+              />
               <h3 class="title">Современные технологии</h3>
-              <p class="text">
+              <p class="about-us-text text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -95,7 +114,7 @@
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-list">
-            <li>
+            <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
                   src="./images/img.png"
@@ -104,7 +123,7 @@
               /></a>
               <h3 class="item-title">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
                   src="./images/box.png"
@@ -113,7 +132,7 @@
               /></a>
               <h3 class="item-title">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
                   src="./images/img1.png"
@@ -132,6 +151,7 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                class="person"
                 src="./images/ProductDesigner.jpg"
                 alt="Фото сотрудника"
                 width="270"
@@ -139,26 +159,43 @@
               <h3 class="title">Николай Кучеренко</h3>
               <p lang="en">Product Designer</p>
               <ul class="social-list">
-                <li>
-                  <a
-                    href=""
-                    aria-label="instagram icon"
-                    class="social-icon"
-                  ></a>
+                <li class="social-link">
+                  <a href="" aria-label="instagram icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/instagram.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Twitter icon" class="social-icon"></a>
+                <li class="social-link">
+                  <a href="" aria-label="Twitter icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/twitter.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Facebook icon" class="social-icon"></a>
+                <li class="social-link">
+                  <a href="" aria-label="Facebook icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/facebook.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Linkedin icon" class="social-icon"></a>
+                <li class="social-link">
+                  <a href="" aria-label="Linkedin icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/linkedin.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
               </ul>
             </li>
             <li class="team-list-item">
               <img
+                class="person"
                 src="./images/frontentDeveloper.jpg"
                 alt="Фото сотрудника"
                 width="270"
@@ -166,26 +203,43 @@
               <h3 class="title">Ольга Иванова</h3>
               <p lang="en">Frontend Developer</p>
               <ul class="social-list">
-                <li>
-                  <a
-                    href=""
-                    aria-label="instagram icon"
-                    class="social-icon"
-                  ></a>
+                <li class="social-list-link">
+                  <a href="" aria-label="instagram icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/instagram.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Twitter icon" class="social-icon"></a>
+                <li class="social-list-link">
+                  <a href="" aria-label="Twitter icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/twitter.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Facebook icon" class="social-icon"></a>
+                <li class="social-list-link">
+                  <a href="" aria-label="Facebook icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/facebook.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
-                <li>
-                  <a href="" aria-label="Linkedin icon" class="social-icon"></a>
+                <li class="social-list-link">
+                  <a href="" aria-label="Linkedin icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/linkedin.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
               </ul>
             </li>
             <li class="team-list-item">
               <img
+                class="person"
                 src="./images/marketing.jpg"
                 alt="Фото сотрудника"
                 width="270"
@@ -194,25 +248,42 @@
               <p lang="en">Marketing</p>
               <ul class="social-list">
                 <li>
-                  <a
-                    href=""
-                    aria-label="instagram icon"
-                    class="social-icon"
-                  ></a>
+                  <a href="" aria-label="instagram icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/instagram.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Twitter icon" class="social-icon"></a>
+                  <a href="" aria-label="Twitter icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/twitter.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Facebook icon" class="social-icon"></a>
+                  <a href="" aria-label="Facebook icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/facebook.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Linkedin icon" class="social-icon"></a>
+                  <a href="" aria-label="Linkedin icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/linkedin.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
               </ul>
             </li>
             <li class="team-list-item">
               <img
+                class="person"
                 src="./images/UlDesigner.jpg"
                 alt="Фото сотрудника"
                 width="270"
@@ -221,20 +292,36 @@
               <p lang="en">UI Designer</p>
               <ul class="social-list">
                 <li>
-                  <a
-                    href=""
-                    aria-label="instagram icon"
-                    class="social-icon"
-                  ></a>
+                  <a href="" aria-label="instagram icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/instagram.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Twitter icon" class="social-icon"></a>
+                  <a href="" aria-label="Twitter icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/twitter.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Facebook icon" class="social-icon"></a>
+                  <a href="" aria-label="Facebook icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/facebook.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
                 <li>
-                  <a href="" aria-label="Linkedin icon" class="social-icon"></a>
+                  <a href="" aria-label="Linkedin icon" class="social-icon"
+                    ><img
+                      src="./images/social-icon/linkedin.svg"
+                      alt=""
+                      width="20"
+                  /></a>
                 </li>
               </ul>
             </li>
@@ -246,50 +333,56 @@
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="customers-list">
-            <li class="customers-list-item">
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo1.svg"
                   alt="логотип компании"
                   width="41"
               /></a>
             </li>
-            <li>
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo2.svg"
                   alt="логотип компании"
                   width="41"
               /></a>
             </li>
-            <li>
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo3.svg"
                   alt="логотип компании"
                   width="41"
               /></a>
             </li>
-            <li>
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo4.svg"
                   alt="логотип компании"
                   width="41"
               /></a>
             </li>
-            <li>
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo5.svg"
                   alt="логотип компании"
                   width="41"
                 />
               </a>
             </li>
-            <li>
+            <li class="customers-list-logo">
               <a href=""
                 ><img
+                  class="logo-company"
                   src="./images/logo6.svg"
                   alt="логотип компании"
                   width="41"
@@ -301,8 +394,8 @@
       </section>
     </main>
     <!--Подвал страницы-->
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <div>
           <a href="/" class="footer-logo"><span>Web</span> Studio </a>
           <ul class="footer-contacts">

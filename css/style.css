@@ -103,7 +103,6 @@ ul {
 .site-nav .container {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .nav-list {
@@ -137,6 +136,8 @@ ul {
 /* Section Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: var(--second-text-color);
   background-color: blue;
 }
@@ -154,15 +155,18 @@ ul {
 /* Button */
 
 .button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--accent-color);
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: center;
+
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -172,13 +176,100 @@ ul {
 .button:focus {
 }
 
-/* Section our team*/
-.team {
+.hero .button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Section about us */
+
+.about-us {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-text {
+  width: 270px;
+}
+
+.about-us-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-list .title {
+  margin-bottom: 10px;
+}
+
+.about-us-list h3,
+.item-title {
+  text-transform: uppercase;
+}
+
+.icon {
+  display: flex;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   background: #f5f4fa;
+  border-radius: 4px;
+}
+
+/* Section what we do */
+
+.work-list {
+  display: flex;
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-work {
+  padding-bottom: 94px;
+}
+
+/* Section our team*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.person {
+  margin-bottom: 30px;
+}
+
+.team-list-item .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.team-list-item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .title {
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .item-title {
@@ -195,36 +286,78 @@ ul {
 }
 
 .team-list p {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
 }
 
-.text {
+.social-icon {
+  padding: 12px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.social-list-link .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   text-transform: none;
 }
-/* Section our work */
 
-.about-us-list h3,
-.item-title {
-  text-transform: uppercase;
+.social-list .social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Customers */
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .customers-list-link:hover {
   color: var(--accent-color);
 }
 
+.customers-list-logo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-list-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
 /* Footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
+}
 
 .footer-contacts address {
   color: var(--second-text-color);
-  background-color: black;
   font-style: normal;
   line-height: 1.71;
 }
@@ -241,13 +374,12 @@ div > b {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: black;
 }
 
 .footer-logo {
   color: var(--second-text-color);
-  background-color: black;
 }
+
 /* Portfolio Page */
 
 .list-buttons {
