@@ -5,6 +5,16 @@
 /* цвет акцента #2196F3 */
 /* белый цвет #FFFFFF */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -12,6 +22,13 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --second-text-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
@@ -37,6 +54,8 @@ h3 {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header and Footer*/
@@ -50,10 +69,20 @@ ul {
   color: var(--primary-text-color);
 }
 .header-contacts {
+  display: flex;
+  align-items: center;
+  margin: auto;
   letter-spacing: 0.02em;
 }
 
+.header-contacts .link:first-child {
+  margin-right: 30px;
+}
+
 /* Logo */
+.header-logo {
+  margin-right: 86px;
+}
 
 .header-logo,
 .footer-logo {
@@ -71,6 +100,21 @@ ul {
 }
 /* Navigation */
 
+.site-nav .container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-list a {
   font-weight: 500;
   font-size: 14px;
@@ -80,6 +124,16 @@ ul {
   color: var(--title-text-color);
 }
 
+.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
 /* Section Hero */
 
 .hero {
@@ -96,10 +150,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
 
 /* Button */
 
@@ -109,15 +159,23 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  width: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 .button:focus {
 }
 
 /* Section our team*/
+.team {
+  background: #f5f4fa;
+}
 
 .title {
   color: var(--title-text-color);
