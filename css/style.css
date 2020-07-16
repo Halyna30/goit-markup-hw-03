@@ -85,7 +85,7 @@ ul {
 }
 
 .header-logo,
-.footer-logo {
+.footer-contacts .footer-logo {
   color: var(--title-text-color);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -102,6 +102,7 @@ ul {
 
 .site-nav .container {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -220,6 +221,11 @@ ul {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--accent-color);
 }
 
 /* Section what we do */
@@ -354,6 +360,16 @@ ul {
 
 .footer-container {
   display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-contacts {
+  margin-right: 69px;
+}
+
+.footer-invitation {
+  margin-right: 94px;
 }
 
 .footer-contacts address {
@@ -376,19 +392,44 @@ div > b {
   color: #ffffff;
 }
 
-.footer-logo {
+.footer-contacts .footer-logo {
+  display: block;
   color: var(--second-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Portfolio Page */
 
+.portfolio-list-button {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 .list-buttons {
+  display: flex;
+  justify-content: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.portfolio-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list-buttons .portfolio-button {
+  display: block;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 0;
 }
 
 .portfolio-button:hover,
@@ -398,6 +439,10 @@ div > b {
 }
 
 .portfolio-title {
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 0;
+  text-align: left;
   font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
@@ -407,6 +452,8 @@ div > b {
 }
 
 .portfolio-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
@@ -415,3 +462,28 @@ div > b {
 .portfolio-list a {
   text-decoration: none;
 }
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:nth-child(3n + 3) {
+  margin-right: 30px;
+}
+
+/*.portfolio-link {
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+*/
