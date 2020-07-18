@@ -58,6 +58,12 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header and Footer*/
 
 .header-contacts-item:first-child {
@@ -464,7 +470,8 @@ div > b {
 .list-buttons .portfolio-button {
   display: block;
   padding: 6px 22px;
-  background: #f5f4fa;
+  border-color: ;
+  white-space: var(--second-text-color);
 }
 
 .portfolio-button:hover,
@@ -508,6 +515,9 @@ div > b {
 
 .work-item {
   display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
@@ -520,5 +530,12 @@ div > b {
 
 .portfolio-link .title-text {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.portfolio-link {
+  display: block;
 }
